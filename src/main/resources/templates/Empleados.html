@@ -23,5 +23,21 @@
         </ul>
     </div>
 </nav>
+
+
+
+<h2>Lista de Empleados</h2>
+<a class = "btn btn-primary mt-4 mb-4" th:href="@{'employee/new'}">Nuevo Empelado</a>
+<table class="table table-sm">
+    <tr>
+        <th>#</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Puesto</th>
+        <th>Departamento</th>
+        <th>Ciudad</th>
+    </tr>
+    <tr th:each="employee, info : $()"
+</table>
 </body>
 </html>
